@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil | Conecta+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="navbar">
+    <div class="logo">
+        <a href="../Home/index.html">
+            <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+        </a>
+    </div>
+
+    <div class="navbar-right">
+        <div class="search-bar">
+            <img src="../../assets/icons/pesquisa_inicial.png" alt="Pesquisar" class="menu-img-icon">
+            <input type="text" placeholder="Pesquisar cursos">
+        </div>
+        
+        <div class="user-actions">
+            <img src="../../assets/icons/notificacao_inicial.png" class="btn-sino icon" alt="Notificações">
+            <div class="user-profile-box">
+                <img src="../../assets/icons/perfil_inicial.png" class="icon" alt="Usuário">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="header-perfil">
+        <div class="titulos-perfil">
+            <h1>Meu perfil</h1>
+            <p>Visualize e gerencie suas informações</p>
+        </div>
+        <a href="editar.html" class="btn-editar" style="text-decoration: none;">
+    <img src="../../assets/icons/lapis.png" alt="Editar" class="icon-btn"> Editar perfil
+</a>
+    </div>
+
+    <section class="card-perfil">
+        <div class="avatar-placeholder">
+            <img src="../../assets/icons/meu_perfil.png" alt="Foto de perfil" class="avatar-img">
+        </div>
+        <div class="info">
+            <div class="nome-linha">
+                <h2>João Pedro Silva</h2>
+            </div>
+            <span class="tag-aluno">Aluno</span>
+            
+            <h3>Sobre mim</h3>
+            <p class="texto-cinza">Gosto de aprender novas habilidades e explorar novas áreas do conhecimento.</p>
+            
+            <h3>Áreas de interesse</h3>
+            <div class="tags-interesse">
+                <span>Design</span> 
+                <span>Idiomas</span> 
+                <span>Programação</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid-inferior">
+        <!-- Card Esquerdo -->
+        <div class="card">
+            <div class="card-titulo">
+                <img src="../../assets/icons/icone_grafico.png" alt="" class="icone-titulo">
+                <h3>Progresso de aprendizado</h3>
+            </div>
+            
+            <div class="lista-itens">
+                <div class="item-progresso">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_cursos.png" alt="" class="icone-lista">
+                        <span>Cursos em andamento</span>
+                    </div>
+                    <strong>2</strong>
+                </div>
+                <div class="item-progresso">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_cursosconclui.png" alt="" class="icone-lista">
+                        <span>Cursos em concluídos</span>
+                    </div>
+                    <strong>1</strong>
+                </div>
+                <div class="item-progresso">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_certificados.png" alt="" class="icone-lista">
+                        <span>Certificados</span>
+                    </div>
+                    <strong>1</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Direito -->
+        <div class="card">
+            <div class="card-titulo">
+                <img src="../../assets/icons/icone_andamento.png" alt="" class="icone-titulo">
+                <h3>Atividades Recentes</h3>
+            </div>
+
+            <div class="lista-itens">
+                <div class="item-atividade">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_play.png" alt="" class="icone-lista">
+                        <div class="textos-atividade">
+                            <span class="acao">Iniciou</span>
+                            <span class="curso">Matemática Básica</span>
+                        </div>
+                    </div>
+                    <span class="tempo">2 dias atrás</span>
+                </div>
+
+                <div class="item-atividade">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_play.png" alt="" class="icone-lista">
+                        <div class="textos-atividade">
+                            <span class="acao">Iniciou</span>
+                            <span class="curso">Introdução à informática</span>
+                        </div>
+                    </div>
+                    <span class="tempo">5 dias atrás</span>
+                </div>
+
+                <div class="item-atividade">
+                    <div class="lado-esquerdo">
+                        <img src="../../assets/icons/icone_check.png" alt="" class="icone-lista">
+                        <div class="textos-atividade">
+                            <span class="acao">Concluiu</span>
+                            <span class="curso">Edição de Vídeo</span>
+                        </div>
+                    </div>
+                    <span class="tempo">1 semana atrás</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="../../assets/js/notificacoes.js"></script>
+<script src="../../assets/js/logout.js"></script>
+<script src="perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,677 @@
+/* --- Variáveis Globais --- */
+:root {
+    --blue-primary: #2C6E99; /* Azul principal baseado nas imagens */
+    --blue-hover: #23587A;
+    --bg-gray: #F4F7F6;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --text-light: #888888;
+    --green-progress: #4CAF50;
+    --border-color: #E0E0E0;
+    --white: #ffffff;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    background-color: var(--bg-gray); 
+}
+
+/* --- Layout da Aplicação --- */
+.app-layout { 
+    display: flex; 
+    min-height: 100vh; 
+}
+
+/* --- Sidebar (Menu Lateral) --- */
+.sidebar { 
+    width: 240px; 
+    background-color: var(--blue-primary); 
+    padding: 20px 0; 
+    display: flex; 
+    flex-direction: column; 
+    color: white;
+    flex-shrink: 0;
+}
+
+.brand { 
+    margin-bottom: 30px; 
+    padding: 0 20px;
+}
+
+.brand img { 
+    width: 140px; 
+}
+
+.nav-menu { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.nav-item { 
+    display: flex; 
+    align-items: center; 
+    padding: 12px 20px; 
+    color: rgba(255, 255, 255, 0.8); 
+    text-decoration: none; 
+    font-weight: 500; 
+    transition: 0.2s; 
+}
+
+.nav-item:hover { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: white; 
+}
+
+/* Item ativo no menu */
+.nav-item.active { 
+    background-color: rgba(255, 255, 255, 0.15); 
+    color: white; 
+    border-left: 4px solid white;
+}
+
+.menu-img-icon { 
+    width: 20px; 
+    height: 20px; 
+    margin-right: 15px; 
+    filter: brightness(0) invert(1); /* Deixa os ícones brancos caso sejam pretos */
+}
+
+.bottom-menu { 
+    margin-top: auto; 
+}
+
+/* --- Main Column (Conteúdo Principal) --- */
+.main-column { 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    overflow-y: auto;
+}
+
+/* --- Topbar (Barra Superior) --- */
+.topbar { 
+    background-color: var(--blue-primary); 
+    padding: 15px 30px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-shrink: 0;
+}
+
+.search-bar { 
+    background: white; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    display: flex; 
+    align-items: center; 
+    width: 400px; 
+}
+
+.search-bar input { 
+    border: none; 
+    background: transparent; 
+    margin-left: 10px; 
+    outline: none; 
+    width: 100%; 
+    font-size: 14px;
+}
+
+.user-controls {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-btn { 
+    background: none; 
+    border: none; 
+    font-size: 20px; 
+    cursor: pointer; 
+    color: white; 
+}
+
+/* --- Área de Conteúdo --- */
+.content-area { 
+    padding: 30px 40px; 
+}
+
+.page-title { 
+    font-size: 28px; 
+    color: var(--text-main); 
+    margin-top: 0;
+    margin-bottom: 20px; 
+}
+
+/* --- Tabs e Busca Interna --- */
+.tabs-and-search { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 30px; 
+}
+
+.tabs-group { 
+    display: flex; 
+    gap: 10px; 
+}
+
+.tab-btn { 
+    padding: 8px 24px; 
+    background: var(--blue-primary); 
+    color: white; 
+    border: none; 
+    border-radius: 20px; /* Formato pílula */
+    cursor: pointer; 
+    font-weight: 500; 
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.tab-btn.active { 
+    opacity: 1;
+    background: var(--blue-hover);
+}
+
+.search-box-pill { 
+    background: white; 
+    border: 1px solid var(--border-color); 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    display: flex; 
+    align-items: center; 
+    width: 250px;
+}
+
+.search-box-pill input { 
+    border: none; 
+    outline: none; 
+    margin-left: 10px; 
+    width: 100%;
+    font-size: 13px;
+}
+
+/* --- Grid de Cursos (Responsivo) --- */
+.cursos-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+    gap: 24px; 
+    row-gap: 32px;
+}
+
+/* --- Cartão do Curso (Novo Padrão) --- */
+.course-card { 
+    background: white; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+    display: flex; 
+    flex-direction: column; 
+    border: 1px solid #eaeaea;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.course-image { 
+    width: 100%; 
+    height: 160px; 
+    object-fit: cover; 
+}
+
+.course-content { 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.course-title { 
+    font-size: 20px; 
+    font-weight: 700; 
+    color: #111; 
+    margin: 0 0 4px 0; 
+}
+
+.course-module { 
+    font-size: 14px; 
+    color: #666; 
+    margin-bottom: 16px; 
+}
+
+.course-module .highlight-text { 
+    color: #333; 
+    font-weight: 600; 
+}
+
+/* --- Informações Meta --- */
+.course-meta { 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 16px; 
+    font-size: 13px; 
+    color: #777; 
+    margin-bottom: 20px; 
+}
+
+.meta-item { 
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+}
+
+.meta-item img { 
+    width: 14px; 
+    height: 14px; 
+    object-fit: contain;
+}
+
+/* --- Progresso --- */
+.progress-container { 
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.progress-bar { 
+    width: 100%;
+    height: 6px; 
+    background: #EBEBEB; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.progress-fill { 
+    height: 100%; 
+    background: var(--green-progress); 
+    border-radius: 10px;
+}
+
+/* --- Botões de Ação do Card --- */
+.card-actions { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: auto; 
+}
+
+.btn-solid, .btn-outline { 
+    padding: 10px 0; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 13px; 
+    font-weight: 600; 
+    text-align: center;
+    transition: 0.2s;
+}
+
+.btn-solid { 
+    background: var(--blue-primary); 
+    color: white; 
+    border: none;
+}
+
+.btn-solid:hover {
+    background: var(--blue-hover);
+}
+
+.btn-outline { 
+    background: transparent; 
+    border: 1.5px solid var(--blue-primary); 
+    color: var(--blue-primary); 
+}
+
+.btn-outline:hover {
+    background: #F0F6FA;
+}
+
+/* --- Ação Alternativa (Link com Cadeado) --- */
+.course-action {
+    margin-top: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #4682B4;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0; 
+}
+
+.course-action img {
+    width: 16px;
+    height: 16px;
+}
+
+.course-action:hover {
+    color: #2F4865;
+}
+
+
+/* =========================================================
+   TELA DE AULA (VÍDEO) E TELA DE EXERCÍCIOS
+   ========================================================= */
+
+.internal-layout {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; 
+    gap: 30px;
+    align-items: start;
+}
+
+.content-header h1 { margin: 0 0 5px 0; font-size: 26px; color: #111; }
+.content-subtitle { color: #666; font-size: 14px; margin-bottom: 25px; }
+
+.video-player-container iframe {
+    width: 100%;
+    height: 400px; 
+    display: block;
+    border: none;
+}
+.video-placeholder {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
+}
+.play-btn-overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px; height: 60px;
+}
+
+.lesson-tabs { border-bottom: 1px solid #eee; margin-bottom: 20px; }
+.lesson-tabs button {
+    background: transparent; border: none;
+    color: var(--blue-primary); font-weight: 600; font-size: 15px;
+    padding: 10px 0; border-bottom: 3px solid var(--blue-primary);
+}
+.lesson-description { color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 25px; }
+
+.material-card {
+    display: flex; align-items: center; justify-content: space-between;
+    background: #F0F6FA; border-radius: 10px; padding: 15px 20px; margin-bottom: 30px;
+}
+.material-info { display: flex; align-items: center; gap: 15px; }
+.material-icon { background: var(--blue-primary); color: white; padding: 10px; border-radius: 8px; }
+.material-text strong { display: block; color: #111; font-size: 14px; }
+.material-text span { color: #666; font-size: 12px; }
+.btn-download {
+    background: white; border: 1px solid var(--blue-primary); color: var(--blue-primary);
+    padding: 8px 15px; border-radius: 6px; font-weight: 600; font-size: 13px; cursor: pointer;
+}
+
+.bottom-nav { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 20px; }
+.btn-nav { padding: 10px 20px; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: 14px; }
+.btn-nav.prev { background: transparent; border: 1px solid #ccc; color: #666; }
+.btn-nav.next { background: var(--blue-primary); border: none; color: white; }
+
+.side-card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); margin-bottom: 20px; }
+.side-card h3 { margin: 0 0 20px 0; font-size: 16px; color: #111; }
+
+.module-list { display: flex; flex-direction: column; }
+.module-item { display: flex; align-items: center; padding: 12px 10px; border-radius: 8px; gap: 15px; margin-bottom: 5px; }
+.module-item .number { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; }
+.module-item .details { flex: 1; }
+.module-item .details strong { display: block; font-size: 13px; margin-bottom: 3px; }
+.module-item .details span { font-size: 11px; }
+
+.module-item.completed .number { background: #4CAF50; color: white; }
+.module-item.completed { color: #333; }
+.module-item.active { background: #E6F3FF; color: var(--blue-primary); border-left: 4px solid var(--blue-primary); }
+.module-item.active .number { background: transparent; border: 1px solid var(--blue-primary); color: var(--blue-primary); }
+.module-item.locked { color: #999; opacity: 0.7; }
+.module-item.locked .number { background: #eee; color: #999; }
+
+.check-icon {
+    width: 20px; height: 20px;
+    background-color: #4CAF50; color: white;
+    border-radius: 50%; display: flex;
+    align-items: center; justify-content: center;
+    font-size: 12px; font-weight: bold;
+}
+.progress-header { display: flex; justify-content: space-between; font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+.progress-header span:last-child { color: var(--green-progress); }
+
+/* --- QUIZ --- */
+.badge-module { display: inline-flex; align-items: center; gap: 10px; background: white; padding: 10px 15px; border-radius: 10px; border: 1px solid #eee; margin-bottom: 30px; font-size: 13px; font-weight: 600;}
+.question-title { font-size: 18px; color: #111; margin-bottom: 20px; font-weight: 700; }
+
+.options-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px; }
+.option-item { border: 1px solid #ccc; padding: 15px; border-radius: 8px; display: flex; align-items: center; gap: 15px; font-size: 14px; color: #444; cursor: pointer; transition: 0.2s; }
+.option-item:hover { border-color: var(--blue-primary); }
+.option-item.correct { border-color: var(--green-progress); background: #E8F5E9; font-weight: 600; color: #2E7D32; }
+
+.feedback-box { background: #E8F5E9; border-radius: 8px; padding: 15px; margin-bottom: 25px; border-left: 4px solid var(--green-progress); }
+.feedback-box h4 { color: #2E7D32; margin: 0 0 5px 0; display: flex; align-items: center; gap: 8px; }
+.feedback-box p { color: #333; font-size: 13px; margin: 0; line-height: 1.5; }
+
+.performance-circles { display: flex; gap: 8px; justify-content: center; margin-bottom: 20px; }
+.circle { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: bold; border: 1px solid #ccc; color: #666; }
+.circle.green { background: var(--green-progress); color: white; border-color: var(--green-progress); }
+
+.stat-boxes { display: flex; gap: 10px; }
+.stat-box { flex: 1; border: 1px solid #eee; border-radius: 8px; padding: 10px; text-align: center; }
+.stat-box img { width: 20px; margin-bottom: 5px; }
+.stat-box strong { display: block; font-size: 16px; color: #111; }
+.stat-box span { font-size: 11px; color: #666; }
+
+
+/* =========================================================
+   TELA DE FÓRUM (ADICIONADO E INTEGRADO)
+   ========================================================= */
+
+.forum-header {
+    margin-bottom: 25px;
+}
+
+.forum-subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+/* Barra de Ações do Fórum */
+.forum-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.forum-actions .search-box-pill {
+    flex: 1;
+    max-width: 500px;
+}
+
+.btn-new-question {
+    padding: 10px 24px !important; /* Ajuste fino de altura */
+    white-space: nowrap;
+}
+
+/* Layout de duas colunas do fórum */
+.forum-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.forum-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Cards do Fórum */
+.post-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.post-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 4px;
+}
+
+.post-title-row h3 {
+    font-size: 17px;
+    color: var(--text-main);
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.post-content p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+/* Sistema de Tags (Pílulas) */
+.tag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+.tag-ingles { background-color: #fce8ee; color: #d6336c; }
+.tag-informatica { background-color: #e8f8eb; color: #2b8a3e; }
+.tag-matematica { background-color: #efe9f9; color: #845ef7; }
+
+/* Rodapé das Postagens */
+.post-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-muted);
+    font-size: 13px;
+    border-top: 1px solid #f3f3f3;
+    padding-top: 14px;
+}
+
+.footer-action {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-action:hover {
+    color: var(--blue-primary);
+}
+
+.save-icon {
+    margin-left: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Botão Carregar Mais */
+.btn-load-more {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Sidebar do Fórum (Widgets) */
+.forum-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-widget {
+    background: var(--white);
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.sidebar-widget h3 {
+    font-size: 15px;
+    margin: 0 0 16px 0;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.category-list, .topic-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li, .topic-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    font-size: 14px;
+    color: var(--text-muted);
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.category-list li:last-child, .topic-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.widget-item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Contador Numérico Alinhado à Direita */
+.count {
+    background: #eef5f9;
+    color: var(--blue-primary);
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+}

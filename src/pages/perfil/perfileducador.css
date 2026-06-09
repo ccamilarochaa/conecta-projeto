@@ -1,0 +1,171 @@
+/* --- LAYOUT TELA CHEIA --- */
+body {
+    background-color: #f4f4f4; /* Fundo cinza clarinho como na imagem */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 80vh;
+}
+
+/* --- CARD CENTRAL --- */
+.profile-card {
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 60px; /* Mais padding para ficar arejado */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    margin-bottom: 40px; /* Espaço para os botões abaixo */
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- AVATAR E FOTO --- */
+.avatar-upload {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0; /* Cinza clarinho */
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+/* Ícone de pessoa genérico para o placeholder (opcional, pode usar uma imagem SVG) */
+.avatar-placeholder::after {
+    content:url("../../assets/icons/perfil-cadastro.png"); 
+  display: inline-block; /* Importante para poder ajustar o tamanho */
+    font-size: 40px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avatar-upload span {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* --- FORMULÁRIO --- */
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    color: #111;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Layout de duas colunas para o topo */
+.input-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+/* Estilo padrão para inputs e textareas */
+.input-field, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db; /* Borda suave */
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box; /* Essencial para o padding não quebrar */
+}
+
+.input-field::placeholder, textarea::placeholder {
+    color: #a0a0a0;
+}
+
+textarea {
+    height: 90px;
+    resize: none; /* Impede o usuário de redimensionar */
+}
+
+/* Estilo específico para simular o dropdown */
+.input-field.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    cursor: pointer;
+    color: #a0a0a0; /* Mesma cor do placeholder */
+}
+
+.input-field.dropdown .caret {
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* --- BOTÕES DE NAVEGAÇÃO --- */
+.profile-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.btn-nav {
+    display: block;
+    text-align: center;
+    padding: 14px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    width: 200px;
+    transition: all 0.2s ease;
+}
+
+.btn-voltar {
+    background: transparent;
+    border: 2px solid #3B7BA4;
+    color: #3B7BA4;
+}
+
+.btn-voltar:hover {
+    background-color: #f0f7fb;
+}
+
+.btn-avancar {
+    background-color: #3B7BA4;
+    border: 2px solid #3B7BA4;
+    color: #fff;
+}
+
+.btn-avancar:hover {
+    background-color: #2c5d7c;
+}

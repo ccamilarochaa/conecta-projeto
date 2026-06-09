@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <a href="../Home/index.html">
+                <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+            </a>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/casa_inicial.png" alt="Ícone Página inicial" class="menu-img-icon">
+                </span> Página inicial
+            </a>
+            <a href="../meus_cursos/index.html" class="nav-item active">
+                <span class="icon">
+                    <img src="../../assets/icons/cursos_inicial.png" alt="Ícone Meus cursos" class="menu-img-icon">
+                </span> Meus cursos
+            </a>
+            <a href="../forum/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/forum_inicial.png" alt="Ícone Fórum" class="menu-img-icon">
+                </span> Fórum
+            </a>
+        </nav> 
+        
+        <div class="nav-menu bottom-menu">
+            <a href="../configuracoes/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/configuracoes_inicial.png" alt="Ícone Configurações" class="menu-img-icon">
+                </span> Configurações
+            </a>
+            <a href="../Home/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/sair_inicial.png" alt="Ícone Sair" class="menu-img-icon">
+                </span> Sair
+            </a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        
+        <header class="topbar">
+            <div class="search-bar">
+                <span class="search-icon">
+                    <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+                </span>
+                <input type="text" placeholder="Pesquisar cursos">
+            </div>
+            <div class="user-controls">
+                <button class="icon-btn">
+                    <img src="../../assets/icons/notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon">
+                </button>
+                <button class="icon-btn profile-btn">
+                    <a href="../perfil_editar/index.html">
+                        <img src="../../assets/icons/perfil_inicial.png" alt="Ícone Perfil" class="menu-img-icon">
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            <div class="internal-layout">
+                
+                <div class="lesson-main">
+                    <div class="content-header">
+                        <h1>Introdução à Informática</h1>
+                        <p class="content-subtitle">Módulo 1 de 8 • Aula 2 de 20</p>
+                    </div>
+                    <div class="video-player-container">
+                       <iframe
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Player de vídeo do YouTube" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>                     
+                     </iframe>
+                        </div>
+
+                    <div class="lesson-tabs">
+                        <button class="active">Sobre a aula</button>
+                    </div>
+                    <p class="lesson-description">
+                        Nesta aula, vamos explorar os principais conceitos da informática, entendendo o que é um computador, suas funções e como ele processa informações.
+                        Você conhecerá os principais componentes de hardware e software, além de compreender como eles trabalham juntos no dia a dia.
+                    </p>
+
+                    <div class="material-card">
+                        <div class="material-info">
+                            <div class="material-icon">📄</div>
+                            <div class="material-text">
+                                <strong>Material de apoio</strong>
+                                <span>Resumo da aula em PDF com os principais tópicos</span>
+                            </div>
+                        </div>
+                        <button class="btn-download" onclick="window.open('../../assets/docs/Informatica_basica.pdf', '_blank')">
+                         Baixar material
+                        </button>
+                    </div>
+
+                    <div class="bottom-nav">
+                        <button class="btn-nav prev">< Aula anterior</button>
+                        <button class="btn-nav next">Próxima aula ></button>
+                    </div>
+                </div>
+
+                <div class="lesson-sidebar">
+                    <div class="side-card">
+                        <h3>Aulas do módulo</h3>
+                        <div class="module-item completed">
+                        <div class="number">1</div>
+                            <div class="details">
+                             <strong>Introdução à informática</strong>
+                             <span>10:35</span>
+                             </div>
+                              <div class="check-icon">✓</div>
+                            </div>
+                            <div class="module-item active">
+                                <div class="number">2</div>
+                                <div class="details"><strong>Hardware</strong><span>12:45</span></div>
+                                <img src="../../assets/icons/play.png" width="16">
+                            </div>
+                            <div class="module-item locked">
+                                <div class="number">3</div>
+                                <div class="details"><strong>Software</strong><span>11:20</span></div>
+                                <img src="../../assets/icons/cadeado.png" width="16">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-card">
+                        <div class="progress-header"><span>Seu progresso</span><span>25% concluído</span></div>
+                        <div class="progress-container" style="margin-bottom: 10px;">
+                            <div class="progress-bar"><div class="progress-fill" style="width: 25%;"></div></div>
+                        </div>
+                        <span style="font-size: 12px; color: #666;">2 de 8 aulas concluídas</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

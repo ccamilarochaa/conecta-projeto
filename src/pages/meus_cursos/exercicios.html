@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercícios | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <a href="../Home/index.html">
+                <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+            </a>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/casa_inicial.png" alt="Ícone Página inicial" class="menu-img-icon">
+                </span> Página inicial
+            </a>
+            <a href="../meus_cursos/index.html" class="nav-item active">
+                <span class="icon">
+                    <img src="../../assets/icons/cursos_inicial.png" alt="Ícone Meus cursos" class="menu-img-icon">
+                </span> Meus cursos
+            </a>
+            <a href="../forum/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/forum_inicial.png" alt="Ícone Fórum" class="menu-img-icon">
+                </span> Fórum
+            </a>
+        </nav> 
+        
+        <div class="nav-menu bottom-menu">
+            <a href="../configuracoes/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/configuracoes_inicial.png" alt="Ícone Configurações" class="menu-img-icon">
+                </span> Configurações
+            </a>
+            <a href="../Home/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/sair_inicial.png" alt="Ícone Sair" class="menu-img-icon">
+                </span> Sair
+            </a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        
+        <header class="topbar">
+            <div class="search-bar">
+                <span class="search-icon">
+                    <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+                </span>
+                <input type="text" placeholder="Pesquisar cursos">
+            </div>
+            <div class="user-controls">
+                <button class="icon-btn">
+                    <img src="../../assets/icons/notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon">
+                </button>
+                <button class="icon-btn profile-btn">
+                    <a href="../perfil_editar/index.html">
+                        <img src="../../assets/icons/perfil_inicial.png" alt="Ícone Perfil" class="menu-img-icon">
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            <div class="internal-layout">
+                
+                <div class="quiz-main">
+                    <div class="content-header">
+                        <h1>Exercícios</h1>
+                        <p class="content-subtitle">Teste seus conhecimentos e acompanhe seu progresso</p>
+                    </div>
+
+                    <div class="badge-module">
+                        <img src="../../assets/icons/modulo.png" width="20">
+                        <div><span style="color:#666; font-size:11px; display:block; font-weight:normal;">Módulo atual</span>Introdução à Informática</div>
+                    </div>
+
+                    <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:600; margin-bottom:10px;">
+                        <span>Exercício 2 de 5</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar"><div class="progress-fill" style="width: 40%; background: var(--blue-primary);"></div></div>
+                    </div>
+
+                    <h2 class="question-title">Qual a principal função da memória RAM em um computador?</h2>
+
+                    <div class="options-list">
+                        <label class="option-item">
+                            <input type="radio" name="q1"> Armazenar arquivos permanentemente
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="q1"> Processar informações de forma permanente
+                        </label>
+                        <label class="option-item correct">
+                            <input type="radio" name="q1" checked> Guardar dados temporariamente para o processador usar
+                        </label>
+                        <label class="option-item">
+                        <input type="radio" name="q1"> Exibir imagens na tela do computador
+                        </label>
+                    </div>
+
+                    <div class="feedback-box">
+                        <h4>✓ Resposta correta!</h4>
+                        <p>A memória RAM armazena dados temporários que estão sendo usados no momento, permitindo que o processador acesse essas informações rapidamente.</p>
+                    </div>
+
+                    <div class="bottom-nav">
+                        <button class="btn-nav prev">< Pergunta anterior</button>
+                        <button class="btn-nav next">Próxima pergunta ></button>
+                    </div>
+                </div>
+
+                <div class="quiz-sidebar">
+                    <div class="side-card">
+                        <h3>Seu desempenho</h3>
+                        <div class="performance-circles">
+                            <div class="circle green">1</div>
+                            <div class="circle" style="border-color:var(--blue-primary); color:var(--blue-primary);">2</div>
+                            <div class="circle">3</div>
+                            <div class="circle">4</div>
+                            <div class="circle">5</div>
+                        </div>
+                        <div class="stat-boxes">
+                            <div class="stat-box"><strong style="color:#2E7D32;">1</strong><span>Acertos</span></div>
+                            <div class="stat-box"><strong style="color:#D32F2F;">0</strong><span>Erros</span></div>
+                            <div class="stat-box"><strong>00:45</strong><span>Tempo atual</span></div>
+                        </div>
+                    </div>
+
+                    <div class="side-card">
+                        <h3>Conteúdo do exercício</h3>
+                        <div class="module-list">
+                            <div class="module-item completed">
+                                <div class="number">1</div>
+                                <div class="details"><strong>Conceito de memória</strong></div>
+                               <div class="check-icon">✓</div>
+                            </div>
+                            <div class="module-item active">
+                                <div class="number">2</div>
+                                <div class="details"><strong>Função da memória RAM</strong></div>
+                            </div>
+                        </div>
+                        <button class="btn-nav prev" style="width:100%; margin-top:20px; text-align:center; border: 1px solid var(--blue-primary); background: transparent; color: var(--blue-primary);">⚑ Finalizar exercício</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

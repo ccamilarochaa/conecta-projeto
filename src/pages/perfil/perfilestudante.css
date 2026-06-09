@@ -1,0 +1,118 @@
+/* Card centralizado */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.profile-card {
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h1 { font-size: 28px; margin-bottom: 30px; }
+
+/* Avatar */
+.avatar-upload {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-image: url('../../assets/icons/perfil-cadastro.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:50px 50px;
+}
+
+/* Tags de Interesse */
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    padding: 6px 12px;
+    background: #f0f0f0;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Botões */
+.profile-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-nav {
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-voltar { border: 2px solid #3B7BA4; color: #3B7BA4; }
+.btn-avancar { background: #3B7BA4; color: white; }
+
+/* Estilo padrão da tag (Desmarcada) */
+.interest-tags .tag {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 4px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 20px; /* Borda arredondada */
+    background-color: #f9f9f9; /* Fundo clarinho */
+    color: #555; /* Texto cinza escuro */
+    font-size: 14px;
+    transition: all 0.3s ease; /* Efeito suave na troca de cor */
+}
+
+/* Efeito ao passar o mouse por cima (opcional, mas recomendado) */
+.interest-tags .tag:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo da tag SELECIONADA (Com a classe 'active') */
+.interest-tags .tag.active {
+    background-color: #007BFF; /* Cor principal do seu sistema (Ex: Azul) */
+    color: #ffffff; /* Texto branco */
+    border-color: #007BFF; /* Borda azul */
+    font-weight: 600; /* Texto um pouco mais gordinho */
+}

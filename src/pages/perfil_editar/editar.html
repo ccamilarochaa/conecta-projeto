@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar perfil | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="navbar">
+    <div class="logo">
+        <a href="../Home/index.html">
+            <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+        </a>
+    </div>
+
+    <div class="navbar-right">
+        <div class="search-bar">
+            <img src="../../assets/icons/pesquisa_inicial.png" alt="Pesquisar" class="menu-img-icon">
+            <input type="text" placeholder="Pesquisar cursos">
+        </div>
+        
+        <div class="user-actions">
+            <img src="../../assets/icons/notificacao_inicial.png" class="btn-sino icon" alt="Notificações">
+            <div class="user-profile-box">
+                <img src="../../assets/icons/perfil_inicial.png" class="icon" alt="Usuário">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="header-perfil">
+        <div class="titulos-perfil">
+            <h1>Editar perfil</h1>
+            <p>Atualize as informações do seu perfil</p>
+        </div>
+        <button class="btn-editar-disabled">
+            <img src="../../assets/icons/lapis.png" alt="" class="icon-btn"> Editar perfil
+        </button>
+    </div>
+
+    <section class="card-dois-lados">
+        <div class="lado-foto">
+            <h3>Foto de perfil</h3>
+            <div class="avatar-edit-container">
+                <div class="avatar-placeholder">
+                    <img src="../../assets/icons/meu_perfil.png" alt="Foto de perfil" class="avatar-img">
+                </div>
+                <div class="camera-badge">
+                    <img src="../../assets/icons/camera.png" alt="Mudar foto">
+                </div>
+            </div>
+            <span class="link-alterar-foto">Alterar foto de perfil</span>
+        </div>
+
+        <div class="lado-campos">
+            <h3>Informações públicas</h3>
+            <p class="sub-secao">Essas informações irão aparecer no seu perfil público</p>
+            
+            <div class="grid-campos-publicos">
+                <div class="campo-grupo">
+                    <label>Nome completo</label>
+                    <input type="text" value="João Pedro Silva">
+                </div>
+
+                <div class="campo-grupo row-span-2">
+                    <label>Áreas de interesse</label>
+                    <div class="box-interesses-seletor">
+                        <img src="../../assets/icons/chevron-up.png" alt="" class="chevron-interesses">
+                        <div class="tags-selecionadas-edit">
+                            <span class="tag-ativa">Programação</span>
+                            <span class="tag-ativa">Idiomas</span>
+                            <span class="tag-ativa">Design</span>
+                        </div>
+                        <div class="tags-disponiveis-edit">
+                            <span>Matemática</span><span>Artes</span><span>Ciências</span><span>Biologia</span>
+                            <span>Português</span><span>Geografia</span><span>Sociologia</span><span class="opcao-mais">Outros...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Sobre mim (opcional)</label>
+                    <div class="textarea-container">
+                        <textarea maxlength="70">Gosto de aprender novas habilidade e explorar novas áreas de conhecimento</textarea>
+                        <span class="contador-caracteres">0/70</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="titulo-privado-linha">
+            <img src="../../assets/icons/cadeado.png" alt="" class="icone-cadeado">
+            <div>
+                <h3 style="margin: 0;">Informações privadas</h3>
+                <p class="sub-secao" style="margin: 5px 0 0 0;">Gerencie suas informações pessoais com segurança.</p>
+            </div>
+        </div>
+
+        <div class="grid-campos-privados">
+            <div class="campo-grupo">
+                <label>E-mail</label>
+                <input type="email" value="joaosilva@gmail.com">
+            </div>
+            <div class="campo-grupo">
+                <label>Telefone</label>
+                <input type="text" value="(00) 0000-0000">
+            </div>
+            <div class="campo-grupo">
+                <label>Data de nascimento</label>
+                <input type="text" value="11/11/2010">
+            </div>
+        </div>
+
+        <div class="botoes-formulario-rodape">
+            <a href="index.html" class="btn-cancelar">Cancelar</a>
+            <button type="submit" class="btn-salvar-alteracoes">Salvar alterações</button>
+        </div>
+    </section>
+</main>
+<script src="editar-perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* --- LAYOUT TELA CHEIA --- */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* =========================================
+   PAINEL ESQUERDO (Ilustração - Branco)
+   ========================================= */
+.login-illustration-area {
+    background-color: #ffffff;
+    width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.main-illustration {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+/* =========================================
+   PAINEL DIREITO (Formulário - Azul)
+   ========================================= */
+.login-form-area {
+    background-color: #3B7BA4;
+    color: #ffffff;
+    width: 55%; 
+    position: relative; /* Para posicionar a logo no topo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* LOGO NO TOPO */
+.login-logo-container {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.login-logo-container img {
+    height: 45px;
+}
+
+/* ÁREA DO FORMULÁRIO */
+.form-wrapper {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO DO FORMULÁRIO */
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 500; /* Peso normal para "Bem-Vindo ao" */
+    margin-bottom: 12px;
+}
+
+.form-title strong {
+    font-weight: 800; /* Peso forte para "LOGIN" */
+    color: #90c2e7; /* Um azul mais clarinho para dar destaque, ajuste se necessário */
+}
+
+.form-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff; /* Label branca */
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Fundo branco do input */
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.input-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.4;
+    margin-right: 12px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+    color: #333;
+    background: transparent;
+}
+
+.input-wrapper input::placeholder {
+    color: #a0a0a0;
+}
+
+/* BOTÃO DE MOSTRAR SENHA */
+.btn-toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.btn-toggle-password img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+/* OPÇÕES EXTRAS (Checkbox e Link) */
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.forgot-password:hover {
+    color: #e0e0e0;
+}
+
+/* BOTÃO ENTRAR */
+.form-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    background-color: #ffffff;
+    color: #3B7BA4;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #f4f4f4;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}

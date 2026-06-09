@@ -1,0 +1,76 @@
+.about-page {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Coluna Esquerda */
+.about-main h1 { font-size: 32px; margin-bottom: 5px; }
+.subtitle { color: #666; margin-bottom: 20px; }
+.description { line-height: 1.6; margin-bottom: 30px; }
+
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 40px; }
+.card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+.card h3 { font-size: 16px; margin-bottom: 8px; }
+
+.contact-section input, .contact-section textarea {
+    width: 100%; padding: 12px; margin-bottom: 10px;
+    border: 1px solid #ddd; border-radius: 6px;
+}
+
+/* Coluna Direita (Sidebar) */
+.team-card { border: 1px solid #ddd; padding: 25px; border-radius: 12px; background: #fff; }
+.image-placeholder { 
+    height: 200px; background: #e9ecef; margin: 20px 0; 
+    border-radius: 8px; border: 2px dashed #ccc;
+}
+.contact-details p { margin-bottom: 15px; color: #555; }
+.social-footer { border-top: 1px solid #eee; padding-top: 15px; margin-top: 15px; }
+.social-icons { display: flex; gap: 10px; margin-top: 10px; }
+.social-icons img { width: 24px; cursor: pointer; }
+
+/* Alinhamento do cabeçalho do card */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o título */
+    margin-bottom: 8px;
+}
+
+.card-header h3 { margin: 0; }
+
+/* Alinhamento dos itens de contato na sidebar */
+.contact-details p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+    margin-bottom: 12px;
+}
+
+/* Garante que os ícones não fiquem gigantes */
+.card-header img, .contact-details img {
+    object-fit: contain;
+}
+
+
+/* --- ESTILO FORÇADO PARA O BOTÃO --- */
+.btn-solid {
+    background-color: #2C6E99; /* Cor azul do seu tema */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Para alinhar com o formulário */
+    margin-top: 10px;
+}
+
+.btn-solid:hover {
+    background-color: #1a4d6e; /* Azul mais escuro no hover */
+}

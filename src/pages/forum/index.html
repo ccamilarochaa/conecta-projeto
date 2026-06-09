@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    
+    <aside class="sidebar">
+        <div class="brand">
+            <a href="../Home/index.html">
+                <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+            </a>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item">
+                <span class="icon">
+                   <img src="../../assets/icons/casa_inicial.png" alt="Ícone Página inicial" class="menu-img-icon">
+                </span> Página inicial
+            </a>
+            <a href="../meus_cursos/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/cursos_inicial.png" alt="Ícone Meus cursos" class="menu-img-icon">
+                </span>
+                Meus cursos
+            </a>
+            <a href="../forum/index.html" class="nav-item active">
+                <span class="icon">
+                    <img src="../../assets/icons/forum_inicial.png" alt="Ícone Fórum" class="menu-img-icon">
+                </span>
+                Fórum
+            </a>
+        </nav> 
+        
+        <div class="nav-menu bottom-menu">
+            <a href="../configuracoes/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/configuracoes_inicial.png" alt="Ícone Configurações" class="menu-img-icon">
+                </span>
+                Configurações
+            </a>
+            <a href="../Home/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/sair_inicial.png" alt="Ícone Sair" class="menu-img-icon">
+                </span>
+                Sair
+            </a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        
+        <header class="topbar">
+           <div class="search-bar">
+               <span class="search-icon">
+                   <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+               </span>
+               <input type="text" placeholder="Pesquisar cursos">
+           </div>
+            <div class="user-controls">
+                <button class="icon-btn">
+                    <img src="../../assets/icons/notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon">
+                </button>
+                <button class="icon-btn profile-btn">
+                    <a href="../perfil_editar/index.html">
+                        <img src="../../assets/icons/perfil_inicial.png" alt="Ícone Perfil" class="menu-img-icon">
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            <main class="main-content full-width">
+                
+                <div class="forum-header">
+                    <h1 class="page-title">Fórum</h1>
+                    <p class="forum-subtitle">Tire dúvidas e compartilhe conhecimentos com a comunidade</p>
+                </div>
+
+                <div class="forum-actions">
+                    <div class="search-box-pill">
+                        <span class="search-icon">
+                            <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+                        </span>
+                        <input type="text" placeholder="Pesquisar no fórum...">
+                    </div>
+                    <button class="btn-solid btn-new-question">+ Nova pergunta</button>
+                </div>
+
+                <div class="forum-grid">
+                    
+                    <section class="forum-feed">
+                        
+                        <article class="post-card">
+                            <div class="post-avatar" style="background-color: #ffd6e0; color: #d6336c;">PL</div>
+                            <div class="post-content">
+                                <div class="post-title-row">
+                                    <h3>Como praticar inglês no dia a dia?</h3>
+                                    <span class="tag tag-ingles">Inglês</span>
+                                </div>
+                                <span class="post-meta">Pedro Lima • há 2h</span>
+                                <p>Gostaria de dicas para praticar além das aulas e melhorar a fluência de forma natural.</p>
+                                <div class="post-footer">
+                                    <span class="footer-action"><img src="../../assets/icons/like.png" alt="Curtir" width="16"> 12</span>
+                                    <span class="footer-action"><img src="../../assets/icons/comentario.png" alt="Comentários" width="16"> 5 comentários</span>
+                                    <span class="save-icon"><img src="../../assets/icons/salvo.png" alt="Salvar" width="16"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-avatar" style="background-color: #d3f9d8; color: #2b8a3e;">AS</div>
+                            <div class="post-content">
+                                <div class="post-title-row">
+                                    <h3>Qual a diferença entre memória SSD e HD?</h3>
+                                    <span class="tag tag-informatica">Informática</span>
+                                </div>
+                                <span class="post-meta">Ana Souza • há 4h</span>
+                                <p>Quero entender melhor as funções e as principais vantagens de cada um no computador.</p>
+                                <div class="post-footer">
+                                    <span class="footer-action"><img src="../../assets/icons/like.png" alt="Curtir" width="16"> 10</span>
+                                    <span class="footer-action"><img src="../../assets/icons/comentario.png" alt="Comentários" width="16"> 7 comentários</span>
+                                    <span class="save-icon"><img src="../../assets/icons/salvo.png" alt="Salvar" width="16"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-avatar" style="background-color: #e2d9f3; color: #845ef7;">LA</div>
+                            <div class="post-content">
+                                <div class="post-title-row">
+                                    <h3>Dificuldade com frações, alguém pode ajudar?</h3>
+                                    <span class="tag tag-matematica">Matemática</span>
+                                </div>
+                                <span class="post-meta">Lucas Andrade • há 1 dia</span>
+                                <p>Já assisti às aulas, mas ainda encontro dificuldades na resolução dos exercícios práticos.</p>
+                                <div class="post-footer">
+                                    <span class="footer-action"><img src="../../assets/icons/like.png" alt="Curtir" width="16"> 17</span>
+                                    <span class="footer-action"><img src="../../assets/icons/comentario.png" alt="Comentários" width="16"> 10 comentários</span>
+                                    <span class="save-icon"><img src="../../assets/icons/salvo.png" alt="Salvar" width="16"></span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <button class="btn-solid btn-load-more">Carregar mais</button>
+                    </section>
+
+                    <aside class="forum-sidebar">
+                        
+                        <div class="sidebar-widget">
+                            <h3>Categorias principais</h3>
+                            <ul class="category-list">
+                                <li>
+                                    <span class="widget-item-info">
+                                        <img src="../../assets/icons/icon_informatica.png" alt="Informatica" width="18"> Informática
+                                    </span> 
+                                    <span class="count">52</span>
+                                </li>
+                                <li>
+                                    <span class="widget-item-info">
+                                        <img src="../../assets/icons/icon_matematica.png" alt="Matematica" width="18"> Matemática
+                                    </span> 
+                                    <span class="count">40</span>
+                                </li>
+                                <li>
+                                    <span class="widget-item-info">
+                                        <img src="../../assets/icons/icon_portugues.png" alt="Portugues" width="18"> Português
+                                    </span> 
+                                    <span class="count">35</span>
+                                </li>
+                                <li>
+                                    <span class="widget-item-info">
+                                        <img src="../../assets/icons/icon_idiomas.png" alt="Idiomas" width="18"> Idiomas
+                                    </span> 
+                                    <span class="count">22</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Tópicos mais comentados</h3>
+                            <ul class="topic-list">
+                                <li><span>Pacote Office</span> <span class="count">49</span></li>
+                                <li><span>Como resolver frações</span> <span class="count">43</span></li>
+                                <li><span>Interpretação de texto</span> <span class="count">37</span></li>
+                                <li><span>Como começar a estudar inglês</span> <span class="count">25</span></li>
+                            </ul>
+                        </div>
+
+                    </aside>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

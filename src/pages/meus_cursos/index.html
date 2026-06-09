@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Cursos | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    
+    <aside class="sidebar">
+        <div class="brand">
+            <a href="../Home/index.html">
+                <img src="../../assets/images/conecta-logo.png" alt="Conecta+">
+            </a>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item">
+                <span class="icon">
+                   <img src="../../assets/icons/casa_inicial.png" alt="Ícone Página inicial" class="menu-img-icon">
+                </span> Página inicial
+            </a>
+            <a href="../meus_cursos/index.html" class="nav-item active">
+                <span class="icon">
+                    <img src="../../assets/icons/cursos_inicial.png" alt="Ícone Meus cursos" class="menu-img-icon">
+                </span>
+                Meus cursos
+            </a>
+            <a href="../forum/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/forum_inicial.png" alt="Ícone Fórum" class="menu-img-icon">
+                </span>
+                Fórum
+            </a>
+        </nav> 
+        
+        <div class="nav-menu bottom-menu">
+            <a href="../configuracoes/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/configuracoes_inicial.png" alt="Ícone Configurações" class="menu-img-icon">
+                </span>
+                Configurações
+            </a>
+            <a href="../Home/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="../../assets/icons/sair_inicial.png" alt="Ícone Sair" class="menu-img-icon">
+                </span>
+                Sair
+            </a>
+        </div>
+    </aside> <div class="main-column">
+        
+        <header class="topbar">
+           <div class="search-bar">
+               <span class="search-icon">
+                   <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+               </span>
+               <input type="text" placeholder="Pesquisar cursos">
+           </div>
+            <div class="user-controls">
+                <button class="icon-btn">
+                    <img src="..\..\assets\icons\notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon">
+                </button>
+                <button class="icon-btn profile-btn">
+                    <a href="../perfil_editar/index.html">
+                        <img src="..\..\assets\icons\perfil_inicial.png" alt="Ícone Perfil" class="menu-img-icon">
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            
+            <main class="main-content full-width">
+                
+                <h1 class="page-title">Meus Cursos</h1>
+
+                <div class="tabs-and-search">
+                    <div class="tabs-group">
+                        <button class="tab-btn active" onclick="mostrarAba('andamento')">Em andamento</button>
+                        <button class="tab-btn" onclick="mostrarAba('concluidos')">Concluídos</button>
+                    </div>
+                    
+                   <div class="search-box-pill">
+                       <span class="search-icon">
+                           <img src="../../assets/icons/pesquisa_inicial.png" alt="Ícone pesquisa" width="16">
+                       </span>
+                       <input type="text" placeholder="Meus Cursos">
+                   </div>
+                </div>
+                <div id="aba-andamento" class="tab-content" style="display: block;">
+    <div class="cursos-grid">
+        
+        <article class="course-card">
+            <img src="../../assets/images/ingles_cursos.png" alt="Inglês para iniciantes" class="course-image">
+            <div class="course-content">
+                <h2 class="course-title">Inglês para iniciantes</h2>
+                <p class="course-module">Próximo módulo: <span class="highlight-text">Verbos no presente</span></p>
+                <div class="course-meta">
+                    <span class="meta-item"><img src="../../assets/icons/perfil.png" alt="Prof"> Prof. Ana Paula</span>
+                    <span class="meta-item"><img src="../../assets/icons/relogio.png" alt="Tempo"> 24 aulas</span>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+                </div>
+                
+                <div class="card-actions">
+                    <button class="btn-solid">Continuar</button>
+                    <button class="btn-outline">Exercícios</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="course-card">
+            <img src="../../assets/images/informatica_cursos.png" alt="Introdução à Informática" class="course-image">
+            <div class="course-content">
+                <h2 class="course-title">Introdução à Informática</h2>
+                <p class="course-module">Próximo módulo: <span class="highlight-text">Hardware</span></p>
+                <div class="course-meta">
+                    <span class="meta-item"><img src="../../assets/icons/perfil.png" alt="Prof"> Prof. João Silva</span>
+                    <span class="meta-item"><img src="../../assets/icons/relogio.png" alt="Tempo"> 20 aulas</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+                </div>
+               <div class="card-actions">
+                   <a href="aula.html" style="flex:1;">
+                    <button class="btn-solid" style="width:100%;">Continuar</button>
+                </a>
+                   <a href="exercicios.html" style="flex:1;">
+                    <button class="btn-outline" style="width:100%;">Exercícios</button>
+                </a>
+            </div>
+        </article>
+
+        <article class="course-card">
+            <img src="../../assets/images/matematica_cursos.png" alt="Matemática Básica" class="course-image">
+            <div class="course-content">
+                <h2 class="course-title">Matemática Básica</h2>
+                <p class="course-module">Próximo módulo: <span class="highlight-text">Operações básicas</span></p>
+                <div class="course-meta">
+                    <span class="meta-item"><img src="../../assets/icons/perfil.png" alt="Prof"> Prof. Alicia Costa</span>
+                    <span class="meta-item"><img src="../../assets/icons/relogio.png" alt="Tempo"> 18 aulas</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 15%;"></div></div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-solid">Continuar</button>
+                    <button class="btn-outline">Exercícios</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="course-card">
+            <img src="../../assets/images/financeiro_cursos.png" alt="Educação Financeira" class="course-image">
+            <div class="course-content">
+                <h2 class="course-title">Educação Financeira</h2>
+                <p class="course-module">Próximo módulo: <span class="highlight-text">Controle de gastos</span></p>
+                <div class="course-meta">
+                    <span class="meta-item"><img src="../../assets/icons/perfil.png" alt="Prof"> Prof. Luiz Alves</span>
+                    <span class="meta-item"><img src="../../assets/icons/relogio.png" alt="Tempo"> 15 aulas</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-solid">Continuar</button>
+                    <button class="btn-outline">Exercícios</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+<div id="aba-concluidos" class="tab-content" style="display: none;">
+    <div class="cursos-grid">
+        
+        <article class="course-card">
+            <img src="../../assets/images/raciocinio_cursos.png" alt="Raciocínio Lógico" class="course-image">
+            <div class="course-content">
+                <h2 class="course-title">Raciocínio Lógico</h2>
+                <p class="course-module">Último módulo: <span class="highlight-text">Desafios avançados</span></p>
+                <div class="course-meta">
+                    <span class="meta-item"><img src="../../assets/icons/perfil.png" alt="Prof"> Prof. Julia Rocha</span>
+                    <span class="meta-item"><img src="../../assets/icons/relogio.png" alt="Tempo"> 14 aulas</span>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar"><div class="progress-fill" style="width: 100%; background-color: #4CAF50;"></div></div>
+                </div>
+                
+                <div class="card-actions">
+                    <button class="btn-solid">Revisar</button>
+                    <button class="btn-outline">Exercícios</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+    </div>
+</div>
+
+<script>
+    function mostrarAba(aba) {
+        // Esconde os conteúdos
+        document.getElementById('aba-andamento').style.display = 'none';
+        document.getElementById('aba-concluidos').style.display = 'none';
+        
+        // Remove a classe ativa dos botões
+        const botoes = document.querySelectorAll('.tab-btn');
+        botoes.forEach(btn => btn.classList.remove('active'));
+
+        // Mostra o conteúdo correto e ativa o botão
+        if(aba === 'andamento') {
+            document.getElementById('aba-andamento').style.display = 'block';
+            botoes[0].classList.add('active');
+        } else {
+            document.getElementById('aba-concluidos').style.display = 'block';
+            botoes[1].classList.add('active');
+        }
+    }
+</script>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

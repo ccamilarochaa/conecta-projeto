@@ -1,0 +1,67 @@
+body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f4f4f4; }
+
+.header-banner { background-color: #3B7BA4; height: 80px; width: 100%; }
+
+.container { display: flex; flex-direction: column; align-items: center; padding-top: 40px; }
+
+h1 { font-size: 32px; color: #333; }
+h1 strong { color: #3B7BA4; }
+.subtitle { color: #666; margin-bottom: 40px; }
+
+.profile-cards { display: flex; gap: 20px; }
+
+.card { 
+    background: white; border: 2px solid #ddd; border-radius: 12px; 
+    padding: 30px; width: 250px; text-align: center; cursor: pointer; 
+}
+
+.card.active { 
+    border-color: #3B7BA4;
+     background-color: #f0f7fb; 
+    }
+
+.navigation {
+     display: flex; 
+     justify-content: space-between;
+      width: 600px; 
+      margin-top: 40px;
+     }
+
+.btn-back { 
+    padding: 10px 30px; 
+    border: 1px solid #3B7BA4;
+     color: #3B7BA4;
+      text-decoration: none;
+       border-radius: 5px;
+     }
+
+.btn-next { 
+    padding: 10px 30px;
+     background-color: #3B7BA4; 
+     color: white; 
+     text-decoration: none;
+      border-radius: 5px;
+     }
+
+.card { 
+    background: white; 
+    border: 2px solid #ddd; 
+    border-radius: 12px; 
+    padding: 30px; 
+    width: 250px; 
+    text-align: center; 
+    cursor: pointer; 
+    transition: all 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Fundo padrão do card Estudante quando selecionado */
+.card.active { 
+    background-color: #3B7BA4; /* Cor azul do Conecta+ */
+    border-color: #3B7BA4;
+    color: white; /* Texto fica branco para contrastar */
+}
+
+/* Opcional: Ajustar o texto do parágrafo quando o card está ativo */
+.card.active p {
+    color: #e0e0e0;
+}

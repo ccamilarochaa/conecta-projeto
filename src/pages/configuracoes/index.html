@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações | Conecta+</title>
+     <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../forum/style.css"> <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand"><a href="../Home/index.html"><img src="../../assets/images/conecta-logo.png" alt="Conecta+"></a></div>
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item"><img src="../../assets/icons/casa_inicial.png" class="menu-img-icon"> Página inicial</a>
+            <a href="../meus_cursos/index.html" class="nav-item"><img src="../../assets/icons/cursos_inicial.png" class="menu-img-icon"> Meus cursos</a>
+            <a href="../forum/index.html" class="nav-item"><img src="../../assets/icons/forum_inicial.png" class="menu-img-icon"> Fórum</a>
+        </nav> 
+        <div class="nav-menu bottom-menu">
+            <a href="#" class="nav-item active"><img src="../../assets/icons/configuracoes_inicial.png" class="menu-img-icon"> Configurações</a>
+            <a href="../Home/index.html" class="nav-item"><img src="../../assets/icons/sair_inicial.png" class="menu-img-icon"> Sair</a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        <header class="topbar">
+           <div class="search-bar"><img src="../../assets/icons/pesquisa_inicial.png" width="16"><input type="text" placeholder="Pesquisar cursos"></div>
+            <div class="user-controls">
+                <button class="icon-btn"><img src="../../assets/icons/notificacao_inicial.png" class="btn-sino" class="menu-img-icon"></button>
+                <button class="icon-btn profile-btn"><a href="../perfil_editar/index.html"><img src="../../assets/icons/perfil_inicial.png" class="menu-img-icon"></a></button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            <main class="main-content">
+                <h1 class="page-title">Configurações</h1>
+                <p class="forum-subtitle" style="margin-bottom: 25px;">Gerencie sua conta</p>
+
+                <div class="settings-card">
+                    <a href="../perfil_editar/index.html" class="setting-item">
+                        <div class="setting-info">
+                            <img src="../../assets/icons/perfil_configuracoes.png" class="setting-icon">
+                            <div><strong>Perfil</strong><span>Editar perfil</span></div>
+                        </div>
+                        <img src="../../assets/icons/seta.png" class="arrow-icon">
+                    </a>
+
+                    <a href="senha.html" class="setting-item">
+                        <div class="setting-info">
+                            <img src="../../assets/icons/seguranca_configuracoes.png" class="setting-icon">
+                            <div><strong>Segurança</strong><span>Alterar senha</span></div>
+                        </div>
+                        <img src="../../assets/icons/seta.png" class="arrow-icon">
+                    </a>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <img src="../../assets/icons/notificacoes_configuracoes.png" class="setting-icon">
+                            <div><strong>Notificações</strong><span>Receber notificações</span></div>
+                        </div>
+                        <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <img src="../../assets/icons/dicas_configuracoes.png" class="setting-icon">
+                            <div><strong>Dicas</strong><span>Mostrar tutoriais</span></div>
+                        </div>
+                        <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                    </div>
+
+                    <a href="#" class="setting-item logout-btn">
+                        <div class="setting-info">
+                            <img src="../../assets/icons/sair_configuracoes.png" class="setting-icon">
+                            <strong>Sair da conta</strong>
+                        </div>
+                    </a>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

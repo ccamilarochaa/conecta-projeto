@@ -1,0 +1,100 @@
+
+/* --- LAYOUT PRINCIPAL --- */
+.home-content {
+     display: flex;
+     justify-content: space-between;
+     padding: 50px;
+     max-width: 1200px;
+     margin: 0 auto;
+     align-items: flex-start;
+}
+/* --- SEÇÃO ESQUERDA (Textos) --- */
+.content-left {
+     flex: 1;
+     max-width: 500px;
+}
+
+.main-title {
+    font-size: 48px; /* Tamanho um pouco mais imponente */
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #111;
+    line-height: 1.15; /* Deixa as linhas do título mais unidas */
+}
+
+.main-title .highlight {
+    background-color: #D4E6F1; 
+    padding: 2px 14px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 6px; /* Evita que o fundo azul encoste na linha de cima caso quebre a linha */
+}
+
+.main-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- SEÇÃO DIREITA (Caixas e Ilustração) --- */
+.content-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative; /* Necessário para controlar o z-index da ilustração */
+}
+
+/* CAIXAS DE RECURSOS */
+.feature-box {
+    background-color: #fff;
+    border: 1px solid #B0C4DE;
+    border-radius: 8px;
+    padding: 8px 14px; /* Mais espaço interno para as caixas respirarem */
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espaço um pouco menor para aglomerar as caixas */
+    width: 100%;
+    max-width: 440px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* Sombra mais difusa e moderna */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Prepara o efeito de hover */
+}
+
+/* Pequeno efeito interativo ao passar o mouse nas caixas */
+.feature-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.feature-box img {
+    max-height: 24px;
+    margin-right: 18px; /* Afasta o ícone do texto */
+}
+
+.feature-box p {
+    flex: 1;
+    font-size: 15px;
+    color: #444;
+    font-weight: 500; /* Texto um pouco mais encorpado */
+}
+
+/* ILUSTRAÇÃO CENTRAL */
+.main-illustration-container {
+    margin-top: 10px; /* Puxa a ilustração para cima, criando a sobreposição com as caixas */
+    width: 60%;
+    max-width: 520px;
+    display: flex;
+    justify-content: flex-end; /* Mantém a imagem alinhada à direita */
+    z-index: -1; /* Garante que a imagem fique levemente por trás das caixas, se houver contato */
+}
+
+.main-illustration {
+    width: 100%;
+    height: auto;
+}

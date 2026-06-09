@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Senha | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../forum/style.css"> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand"><a href="../Home/index.html"><img src="../../assets/images/conecta-logo.png" alt="Conecta+"></a></div>
+        <nav class="nav-menu">
+            <a href="../pagina-inicial/index.html" class="nav-item"><img src="../../assets/icons/casa_inicial.png" class="menu-img-icon"> Página inicial</a>
+            <a href="../meus_cursos/index.html" class="nav-item"><img src="../../assets/icons/cursos_inicial.png" class="menu-img-icon"> Meus cursos</a>
+            <a href="../forum/index.html" class="nav-item"><img src="../../assets/icons/forum_inicial.png" class="menu-img-icon"> Fórum</a>
+        </nav> 
+        <div class="nav-menu bottom-menu">
+            <a href="index.html" class="nav-item active"><img src="../../assets/icons/configuracoes_inicial.png" class="menu-img-icon"> Configurações</a>
+            <a href="../Home/index.html" class="nav-item"><img src="../../assets/icons/sair_inicial.png" class="menu-img-icon"> Sair</a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        <header class="topbar">
+           <div class="search-bar"><img src="../../assets/icons/pesquisa_inicial.png" width="16"><input type="text" placeholder="Pesquisar cursos"></div>
+            <div class="user-controls">
+                <button class="icon-btn"><img src="../../assets/icons/notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon"></button>
+                <button class="icon-btn profile-btn"><a href="../perfil_editar/index.html"><img src="../../assets/icons/perfil_inicial.png" class="menu-img-icon"></a></button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            <main class="main-content">
+                <h1 class="page-title">Alterar senha</h1>
+                <p class="forum-subtitle" style="margin-bottom: 25px;">Atualize sua senha de acesso para manter sua conta em segurança</p>
+
+                <div class="settings-card form-card">
+                    <div class="input-group">
+                        <label>Senha atual</label>
+                        <div class="input-wrapper">
+                            <input type="password" placeholder="Digite sua senha atual">
+                            <img src="../../assets/icons/olho-cadastro.png" class="eye-icon">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Nova senha</label>
+                        <div class="input-wrapper">
+                            <input type="password" placeholder="Digite sua nova senha">
+                            <img src="../../assets/icons/olho-cadastro.png" class="eye-icon">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Confirmar nova senha</label>
+                        <div class="input-wrapper">
+                            <input type="password" placeholder="Confirme sua nova senha">
+                            <img src="../../assets/icons/olho-cadastro.png" class="eye-icon">
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <img src="../../assets/icons/senha.png" class="info-icon">
+                        <div class="info-text">
+                            <strong>A sua senha deve conter:</strong>
+                            <ul>
+                                <li>Pelo menos 8 caracteres</li>
+                                <li>Letras e números</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                       <a href="index.html"><button class="btn-outline">Cancelar</button></a>
+                        <button class="btn-solid">Salvar</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+
+</body>
+</html>

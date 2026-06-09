@@ -1,0 +1,71 @@
+/* Container principal das opções */
+.settings-card {
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    max-width: 800px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.setting-item:last-child { border-bottom: none; }
+.setting-item:hover { background-color: #f9f9f9; }
+
+.setting-info { display: flex; align-items: center; gap: 15px; }
+.setting-icon { width: 24px; }
+.setting-info strong { display: block; font-size: 16px; }
+.setting-info span { font-size: 13px; color: #666; }
+
+.arrow-icon { width: 20px; opacity: 0.5; }
+.logout-btn strong { color: #d6336c; }
+
+/* CSS do Switch (Toggle) */
+.switch { position: relative; display: inline-block; width: 50px; height: 26px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+    position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc; transition: .4s; border-radius: 34px;
+}
+.slider:before {
+    position: absolute; content: ""; height: 20px; width: 20px; left: 3px; bottom: 3px;
+    background-color: white; transition: .4s; border-radius: 50%;
+}
+input:checked + .slider { background-color: var(--blue-primary); }
+input:checked + .slider:before { transform: translateX(24px); }
+
+.form-card {
+    padding: 30px;
+    max-width: 600px;
+}
+
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #333; }
+
+.input-wrapper { position: relative; display: flex; align-items: center; }
+.input-wrapper input {
+    width: 100%; padding: 12px 40px 12px 15px; border-radius: 8px;
+    border: 1px solid #ddd; outline: none; font-size: 14px;
+}
+.eye-icon { position: absolute; right: 15px; width: 18px; cursor: pointer; opacity: 0.5; }
+
+.info-box {
+    background: #EBF5FF; border-radius: 8px; padding: 25px;
+    display: flex; gap: 15px; margin-bottom: 35px;
+}
+.info-icon { width: 50px; height: 50px; }
+.info-text strong { display: block; font-size: 14px; color: #1a73e8; margin-bottom: 5px; }
+.info-text ul { margin: 0; padding-left: 15px; font-size: 13px; color: #555; }
+
+.form-actions { display: flex; gap: 15px; justify-content: flex-end; }
+.form-actions button { width: 120px; }

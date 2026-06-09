@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-layout">
+    <aside class="sidebar">
+        <div class="brand">
+            <a href="../Home/index.html">
+            <img src="..\..\assets\images\conecta-logo.png" alt="Conecta+">
+            </a>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active">
+                <span class="icon">
+                   <img src="..\..\assets\icons\casa_inicial.png" alt="Ícone Página inicial" class="menu-img-icon">
+                </span> Página inicial
+            </a>
+            <a href="../meus_cursos/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="..\..\assets\icons\cursos_inicial.png" alt="Ícone Meus cursos" class="menu-img-icon">
+                </span>
+                Meus cursos
+            </a>
+            <a href="../forum/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="..\..\assets\icons\forum_inicial.png" alt="Ícone Fórum" class="menu-img-icon">
+                </span>
+                Fórum
+            </a>
+        </nav>
+
+        <div class="nav-menu bottom-menu">
+            <a href="../configuracoes/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="..\..\assets\icons\configuracoes_inicial.png" alt="Ícone Configurações" class="menu-img-icon">
+                </span>
+                Configurações
+            </a>
+            <a href="../Home/index.html" class="nav-item">
+                <span class="icon">
+                    <img src="..\..\assets\icons\sair_inicial.png" alt="Ícone Sair" class="menu-img-icon">
+                </span>
+                Sair
+            </a>
+        </div>
+    </aside>
+
+    <div class="main-column">
+        
+        <header class="topbar">
+            <div class="search-bar">
+                <span class="search-icon">
+                   <img src="..\..\assets\icons\pesquisa_inicial.png" alt="Ícone pesquisa" class="menu-img-icon">
+                 </span>
+                <input type="text" placeholder="Pesquisar cursos">
+            </div>
+            <div class="user-controls">
+                <button class="icon-btn">
+                    <img src="..\..\assets\icons\notificacao_inicial.png" class="btn-sino" alt="Ícone Notificações" class="menu-img-icon">
+                </button>
+                <button class="icon-btn profile-btn">
+                    <a href="../perfil_editar/index.html">
+                        <img src="..\..\assets\icons\perfil_inicial.png" alt="Ícone Perfil" class="menu-img-icon">
+                    </a>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-area">
+            
+            <main class="main-content">
+                
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="..\..\assets\icons\completos_inicial.png" alt="Ícone Cursos Completos" class="menu-img-icon">
+                        </div>
+                        <div class="stat-info">
+                            <p>Cursos Completos</p>
+                            <h3>2</h3>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="..\..\assets\icons\certificados_inicial.png" alt="Ícone Certificados" class="menu-img-icon">
+                        </div>
+                        <div class="stat-info">
+                            <p>Certificados</p>
+                            <h3>2</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="continue-learning">
+                    <h2 class="section-title">Continuar Aprendendo</h2>
+                    <div class="course-card-horizontal">
+                        <div class="course-image-large">
+                            <img src="..\..\assets\images\informatica_cursos.png" alt="Matemática">
+                        </div>
+                        <div class="course-details">
+                            <h3>Introdução à Informática</h3>
+                            <p class="subtitle">Próximo módulo: Hardware</p>
+                            <div class="progress-container">
+                               <div class="progress-fill" style="width: 30%;"></div> 
+                            </div>
+                           <a href="../meus_cursos/aula.html">
+                               <button class="btn-primary">Continuar curso</button>
+                          </a> 
+                        </div>
+                    </div>
+                </section>
+
+                <section class="for-you">
+                    <div class="section-header">
+                        <h2 class="section-title">Para você</h2>
+                        <a href="#" class="link-view-all">Ver tudo</a>
+                    </div>
+                    
+                    <div class="courses-grid">
+                        <div class="course-card-vertical">
+                            <div class="course-img-wrapper">
+                                <img src="..\..\assets\images\economia_inicial.png" alt="Economia">
+                            </div>
+                            <div class="course-card-body">
+                                <h3>Economia</h3>
+                                <p class="subtitle">Próximo módulo: Oferta e Demanda</p>
+                                <div class="course-meta">
+                                    <span>
+                                         <img src="..\..\assets\icons\perfil.png" alt="Ícone Professor"> Prof. Yuri Martins
+                                        </span>
+                                    <span>
+                                        <img src="..\..\assets\icons\relogio.png" alt="Ícone Aulas"> 16 aulas
+                                    </span>
+                                </div>
+                                <button class="btn-primary btn-small">Começar</button>
+                            </div>
+                        </div>
+
+                        <div class="course-card-vertical">
+                            <div class="course-img-wrapper">
+                                <img src="..\..\assets\images\idioma_inicial.png" alt="Idiomas">
+                            </div>
+                            <div class="course-card-body">
+                                <h3>Idiomas</h3>
+                                <p class="subtitle">Próximo módulo: Gramática básica</p>
+                                <div class="course-meta">
+                                    <span>
+                                        <img src="..\..\assets\icons\perfil.png" alt="Ícone Professor"> Prof. Lara Nunes
+                                    </span>
+                                    <span>
+                                        <img src="..\..\assets\icons\relogio.png" alt="Ícone Aulas"> 16 aulas
+                                    </span>
+                                </div>
+                                <button class="btn-primary btn-small">Começar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="right-panel">
+                
+                <div class="widget-card calendar-widget">
+                    <div class="calendar-header">
+                        <span class="month-pill">Abril</span>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day-name">seg.</div><div class="day-name">ter.</div><div class="day-name">qua.</div>
+                        <div class="day-name">qui.</div><div class="day-name">sex.</div><div class="day-name">sáb.</div><div class="day-name">dom.</div>
+                        
+                        <div class="day out-month">30</div><div class="day out-month">31</div><div class="day">1</div>
+                        <div class="day">2</div><div class="day">3</div><div class="day text-blue">4</div><div class="day text-blue">5</div>
+                        
+                        <div class="day">6</div><div class="day">7</div><div class="day">8</div>
+                        <div class="day">9</div><div class="day">10</div><div class="day text-blue">11</div><div class="day text-blue">12</div>
+                        
+                        <div class="day">13</div><div class="day">14</div><div class="day">15</div>
+                        <div class="day">16</div><div class="day">17</div><div class="day text-blue">18</div><div class="day text-blue">19</div>
+                        
+                        <div class="day">20</div><div class="day active">21</div><div class="day">22</div>
+                        <div class="day">23</div><div class="day">24</div><div class="day text-blue">25</div><div class="day text-blue">26</div>
+                        
+                        <div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day">30</div>
+                    </div>
+                </div>
+
+                <div class="widget-card teachers-widget">
+                    <h3 class="widget-title">Nossos professores</h3>
+                    <ul class="teachers-list">
+                        <li>
+                            <div class="teacher-avatar"></div>
+                            <div class="teacher-info">
+                                <h4>Marina S.</h4>
+                                <p>Técnicas de estudo</p>
+                            </div>
+                            <div class="teacher-rating">⭐ 4.7</div>
+                        </li>
+                        <li>
+                            <div class="teacher-avatar"></div>
+                            <div class="teacher-info">
+                                <h4>Eduardo V.</h4>
+                                <p>Educação financeira</p>
+                            </div>
+                            <div class="teacher-rating">⭐ 4.8</div>
+                        </li>
+                        <li>
+                            <div class="teacher-avatar"></div>
+                            <div class="teacher-info">
+                                <h4>Ana P.</h4>
+                                <p>Inglês</p>
+                            </div>
+                            <div class="teacher-rating">⭐ 4.8</div>
+                        </li>
+                        <li>
+                            <div class="teacher-avatar"></div>
+                            <div class="teacher-info">
+                                <h4>Rafael C.</h4>
+                                <p>Programação</p>
+                            </div>
+                            <div class="teacher-rating">⭐ 4.6</div>
+                        </li>
+                        <li>
+                            <div class="teacher-avatar"></div>
+                            <div class="teacher-info">
+                                <h4>Alan G.</h4>
+                                <p>Edição de vídeo</p>
+                            </div>
+                            <div class="teacher-rating">⭐ 4.8</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/logout.js"></script>
+<script src="../../assets/js/notificacoes.js"></script>
+</body>
+</html>

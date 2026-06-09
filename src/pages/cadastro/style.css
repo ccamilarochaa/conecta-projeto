@@ -1,0 +1,186 @@
+/* --- LAYOUT TELA CHEIA --- */
+.auth-container {
+    display: flex;
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    width: 100%;
+}
+
+/* =========================================
+   PAINEL ESQUERDO (Azul)
+   ========================================= */
+.auth-sidebar {
+    background-color: #3B7BA4; /* Ajustado para o tom de azul da imagem */
+    color: #ffffff;
+    width: 40%; /* Ocupa 40% da largura */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo img {
+    height: 40px;
+}
+
+.sidebar-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.sidebar-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sidebar-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.btn-sidebar {
+    background-color: #ffffff;
+    color: #3B7BA4;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.2s ease;
+}
+
+.btn-sidebar:hover {
+    background-color: #f0f0f0;
+}
+
+/* =========================================
+   PAINEL DIREITO (Formulário Branco)
+   ========================================= */
+.auth-form-area {
+    background-color: #ffffff;
+    width: 60%; /* Ocupa 60% da largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px; /* Limita a largura do formulário para não esticar muito */
+}
+
+/* CABEÇALHO DO FORMULÁRIO */
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #3B7BA4; /* Azul igual ao fundo da esquerda */
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+/* CAIXA DO INPUT (Contém ícone e campo de texto) */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #3B7BA4; /* Muda a cor da borda ao clicar no campo */
+}
+
+.input-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5; /* Deixa o ícone cinza clarinho */
+    margin-right: 12px;
+}
+
+.input-wrapper input {
+    border: none;
+    outline: none;
+    flex: 1; /* Ocupa todo o espaço restante */
+    font-size: 14px;
+    color: #333;
+    background: transparent;
+}
+
+.input-wrapper input::placeholder {
+    color: #9ca3af;
+}
+
+/* BOTÃO DE MOSTRAR SENHA (Olho) */
+.btn-toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.btn-toggle-password img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+/* BOTÃO DE CADASTRAR */
+.form-actions {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit {
+    background-color: #3B7BA4;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px; /* Largura fixa como no design */
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2c5d7c;
+}

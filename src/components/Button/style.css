@@ -1,0 +1,32 @@
+.btn-outline, .btn-filled {
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #4682B4;
+    border: 2px solid #4682B4;
+}
+
+.btn-outline:hover {
+    background-color: #eaf2f8;
+}
+
+.btn-filled {
+    background-color: #4682B4;
+    color: #fff;
+    border: none;
+}
+
+.btn-filled:hover {
+    background-color: #3b6d96;
+}

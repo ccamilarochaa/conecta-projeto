@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Conecta+</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="login-container">
+        
+        <section class="login-illustration-area">
+            <img src="../../assets/images/login.png" alt="Pessoa acessando curso pelo celular" class="main-illustration">
+        </section>
+
+        <section class="login-form-area">
+            
+            <div class="login-logo-container">
+                <a href="../Home/index.html">
+                    <img src="../../assets/images/conecta-logo.png" alt="Logo Conecta+">
+                </a>
+            </div>
+
+            <div class="form-wrapper">
+                <header class="form-header">
+                    <h1 class="form-title">Bem-Vindo ao <strong>LOGIN</strong></h1>
+                    <p class="form-subtitle">Preencha os dados para acessar</p>
+                </header>
+
+                <form action="#" method="POST" class="login-form">
+                    
+                    <div class="input-group">
+                        <label for="email">E-mail ou telefone</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/icons/email-cadastro.png" alt="Ícone" class="input-icon">
+                            <input type="text" id="email" placeholder="Digite seu e-mail ou telefone" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/icons/cadeado-cadastro.png" alt="Ícone" class="input-icon">
+                            <input type="password" id="senha" placeholder="Digite sua senha" required>
+                            <button type="button" class="btn-toggle-password">
+                                <img src="../../assets/icons/olho-cadastro.png" alt="Mostrar senha">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <div class="input-wrapper">
+                            <img src="../../assets/icons/cadeado2-cadastro.png" alt="Ícone" class="input-icon">
+                            <input type="password" id="confirmar-senha" placeholder="Confirme sua senha" required>
+                            <button type="button" class="btn-toggle-password">
+                                <img src="../../assets/icons/olho-cadastro.png" alt="Mostrar senha">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="manter-conectado">
+                            <span class="checkmark"></span>
+                            Manter-me conectado
+                        </label>
+                        <a href="../recuperarSenha/index.html" class="forgot-password">Esqueci minha senha</a>
+                    </div>
+
+                   <div class="form-actions">
+                      <button type="submit" class="btn-submit">Entrar</button>
+                   </div>  
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>
