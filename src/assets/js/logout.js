@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(styleStyle);
 
     // 2. INJETA O HTML DO MODAL NO FINAL DO <BODY>
+    // Correção: Os caminhos (src e href) agora apontam para a raiz do projeto
     const modalHTML = `
         <div class="modal-overlay" id="logoutModal">
             <div class="modal-card">
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </p>
                 <div class="modal-actions">
                     <button class="btn-cancel" id="btnModalCancelar">Cancelar</button>
-                    <a href="../Home/index.html" class="btn-logout">Sair</a>
+                    <a href="../home/index.html" class="btn-logout">Sair</a>
                 </div>
             </div>
         </div>
@@ -89,11 +90,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById('logoutModal');
     const btnCancelar = document.getElementById('btnModalCancelar');
 
-    // Monitora cliques no botão de sair do menu lateral
-    const botoesSairSidebar = document.querySelectorAll('.nav-item[href*="sair"], .nav-item[href*="Home"]');
+    // Correção: Busca todos os nav-items e abre o modal se a palavra "Sair" estiver no texto
+    const botoesSidebar = document.querySelectorAll('.nav-item');
 
-    botoesSairSidebar.forEach(botao => {
-        if (botao.closest('.bottom-menu') || botao.textContent.toLowerCase().includes('sair')) {
+    botoesSidebar.forEach(botao => {
+        if (botao.textContent.toLowerCase().includes('sair')) {
             botao.addEventListener('click', (e) => {
                 e.preventDefault(); 
                 modal.classList.add('active'); 
