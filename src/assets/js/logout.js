@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.appendChild(styleStyle);
 
     // 2. INJETA O HTML DO MODAL NO FINAL DO <BODY>
-    // Correção: Os caminhos (src e href) agora apontam para a raiz do projeto
     const modalHTML = `
         <div class="modal-overlay" id="logoutModal">
             <div class="modal-card">
@@ -90,24 +89,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById('logoutModal');
     const btnCancelar = document.getElementById('btnModalCancelar');
 
-    // Correção: Busca todos os nav-items e abre o modal se a palavra "Sair" estiver no texto
-    const botoesSidebar = document.querySelectorAll('.nav-item');
+    // Busca todos os botões de sair (tanto do menu lateral quanto o botão vermelho do meio da tela)
+    const botoesSair = document.querySelectorAll('.nav-item, .logout-btn');
 
-    botoesSidebar.forEach(botao => {
+    // Abre o modal ao clicar em "Sair"
+    botoesSair.forEach(botao => {
         if (botao.textContent.toLowerCase().includes('sair')) {
             botao.addEventListener('click', (e) => {
-                e.preventDefault(); 
+                e.preventDefault(); // Evita que a página mude antes do modal abrir
                 modal.classList.add('active'); 
             });
         }
     });
 
-    // Fecha ao clicar em cancelar
+    // Fecha ao clicar no botão "Cancelar"
     btnCancelar.addEventListener('click', () => {
         modal.classList.remove('active');
     });
 
-    // Fecha se clicar no fundo escuro
+    // Fecha se clicar no fundo escuro fora da caixinha
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('active');
